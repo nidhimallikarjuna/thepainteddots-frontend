@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F2E5C6; /* Champagne Beige */
+    background-image: radial-gradient(#F2D9A0 1.2px, transparent 1.2px);
+    background-size: 32px 32px;
+    color: #3B010B; /* Deep Wine */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marcellus', 'Cinzel', serif;
+    letter-spacing: 0.02em;
+    color: #3B010B;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
+
+.font-marcellus {
+  font-family: 'Marcellus', serif;
+}
+
+.font-sans-body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Palette Color Theme Classes */
+/* 1. Champagne Beige: #F2E5C6 */
+/* 2. Sand Gold: #F2D9A0 */
+/* 3. Burgundy: #75162D */
+/* 4. Dark Maroon: #560B18 */
+/* 5. Deep Wine: #3B010B */
+
+.bg-champagne {
+  background-color: #F2E5C6;
+}
+
+.bg-sand-gold {
+  background-color: #F2D9A0;
+}
+
+.bg-burgundy {
+  background-color: #75162D;
+}
+
+.bg-dark-maroon {
+  background-color: #560B18;
+}
+
+.bg-deep-wine {
+  background-color: #3B010B;
+}
+
+.text-champagne {
+  color: #F2E5C6;
+}
+
+.text-sand-gold {
+  color: #F2D9A0;
+}
+
+.text-burgundy {
+  color: #75162D;
+}
+
+.text-dark-maroon {
+  color: #560B18;
+}
+
+.text-deep-wine {
+  color: #3B010B;
+}
+
+/* Legacy mapped helper classes for seamless compatibility */
+.bg-theme-bg {
+  background-color: #F2E5C6;
+  background-image: radial-gradient(#F2D9A0 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+}
+
+.bg-walnut, .bg-maroon-main {
+  background-color: #3B010B;
+}
+
+.bg-maroon-dark {
+  background-color: #560B18;
+}
+
+.bg-maroon-light {
+  background-color: #75162D;
+}
+
+.text-gold-light {
+  color: #F2D9A0;
+}
+
+.text-gold-accent {
+  color: #75162D;
+}
+
+.border-gold-accent {
+  border-color: #F2D9A0;
+}
+
+.border-terracotta, .border-burgundy {
+  border-color: #75162D;
+}
+
+.bg-cream-card {
+  background-color: #FFFDF9;
+}
+
+.bg-cream-warm {
+  background-color: #F2D9A0;
+}
+
+/* Primary Burgundy Button */
+.btn-burgundy, .btn-gold, .btn-terracotta {
+  background-color: #75162D;
+  color: #F2E5C6;
+  font-weight: 600;
+  border: 1px solid #75162D;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-burgundy:hover, .btn-gold:hover, .btn-terracotta:hover {
+  background-color: #560B18;
+  border-color: #560B18;
+  color: #F2D9A0;
+  box-shadow: 0 4px 14px rgba(117, 22, 45, 0.28);
+  transform: translateY(-1px);
+}
+
+/* Deep Wine Dark Button */
+.btn-maroon, .btn-walnut, .btn-deep-wine {
+  background-color: #3B010B;
+  color: #F2E5C6;
+  border: 1px solid #3B010B;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-maroon:hover, .btn-walnut:hover, .btn-deep-wine:hover {
+  background-color: #560B18;
+  border-color: #560B18;
+  color: #F2D9A0;
+  box-shadow: 0 4px 14px rgba(59, 1, 11, 0.25);
+}
+
+/* Sand Gold Accent Button */
+.btn-sand-gold {
+  background-color: #F2D9A0;
+  color: #3B010B;
+  font-weight: 700;
+  border: 1px solid #F2D9A0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-sand-gold:hover {
+  background-color: #F2E5C6;
+  border-color: #75162D;
+  color: #75162D;
+  box-shadow: 0 4px 12px rgba(242, 217, 160, 0.35);
+}
+
+/* Outline Clean Button */
+.btn-outline-clean {
+  background-color: #FFFDF9;
+  color: #3B010B;
+  border: 1px solid #F2D9A0;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-outline-clean:hover {
+  background-color: #F2E5C6;
+  border-color: #75162D;
+  color: #75162D;
+}
+
+/* Arch Frame styling */
+.arch-card-top {
+  border-top-left-radius: 120px;
+  border-top-right-radius: 120px;
+}
+
+.arch-card-full {
+  border-top-left-radius: 140px;
+  border-top-right-radius: 140px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+/* Pattern Overlays */
+.bg-mandala-pattern {
+  background-image: radial-gradient(#F2D9A0 1.2px, transparent 1.2px), radial-gradient(#F2D9A0 1.2px, #F2E5C6 1.2px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  opacity: 0.85;
+}
+
+.bg-maroon-pattern {
+  background-color: #3B010B;
+  background-image: radial-gradient(rgba(242, 217, 160, 0.25) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+}
+
+/* Text Gradients */
+.gold-text-gradient {
+  background: linear-gradient(135deg, #75162D 0%, #3B010B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

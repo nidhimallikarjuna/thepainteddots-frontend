@@ -1,0 +1,6 @@
+{
+  "name": "The Painted Dots",
+  "description": "Handmade mandala art e-commerce store featuring hand-painted coasters, keychains, magnets, table decor, and an interactive custom mandala builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
